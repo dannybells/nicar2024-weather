@@ -133,8 +133,6 @@ const sendSlack = async (warning) => {
     //// SEND TO SLACK 
 
     try {
-        //test
-        client.chat.postMessage('Testing!')
         // Call the chat.postMessage method using the WebClient
         const slack_response = await client.chat.postMessage(message);
 
