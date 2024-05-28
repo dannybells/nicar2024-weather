@@ -5,7 +5,8 @@ import jsonminify from 'jsonminify'
 import { WebClient } from '@slack/web-api'
 const SLACK_TOKEN = process.env.SLACK_TOKEN;
 const client = new WebClient(SLACK_TOKEN);
-const SLACK_CHANNEL = "C17MR46KU";
+const SLACK_CHANNEL = "C074ZT3GV8X";
+//C17MR46KU
 const three_ticks = "```";
 
 
@@ -132,6 +133,8 @@ const sendSlack = async (warning) => {
     //// SEND TO SLACK 
 
     try {
+        //test
+        client.chat.postMessage('Testing!')
         // Call the chat.postMessage method using the WebClient
         const slack_response = await client.chat.postMessage(message);
 
